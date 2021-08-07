@@ -1,25 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+// import Greeting from './components/Greeting';
+import LoginForm from './components/forms/LoginForm';
+import Input from './components/forms/Input';
+// import MouseClickerH from './components/MouseClickerH';
+import CounterH from './components/CounterH';
+// function App() {
+//   return <Greeting name='Vasia'/>
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// }
+//====Hooks============
+
+const App = () => <CounterH />;
+
+// function App () {
+//   return <LoginForm />;
+// }
+
+// class App extends Component {
+//   ///rconst
+//   constructor(props){
+//     super(props);
+
+//     this.state = {
+//       name: 'Vasia',
+//       isGreeting: false,
+//     };
+//   }
+
+//   render() {
+//       const {name, isGreeting} = this.state.name;
+
+//       return <Greeting name = {name}  isGreeting =  {isGreeting}/>
+
+//   }
+// } //rcc
 
 export default App;
