@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function CounterH () {
   const [counter, setCounter] = useState(0);
@@ -15,6 +15,11 @@ function CounterH () {
   const ChangeStep = e => {
     setStep(Number(e.target.value));
   };
+
+  useEffect(() => {
+    document.title = counter;
+  }, [counter]);
+
   return (
     <>
       <div>{counter}</div>
